@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends Clothes Wearing</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Piedra&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overflow">
+     
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container logo">
+              <a class="navbar-brand" href="#"> <h1>Ali Hassan</h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item">
+                    <a id="home"  class="nav-link active"   aria-current="page" href="">Home</a>      
+                  </li>
+                  <li class="nav-item">
+                    <a id="shop" class="nav-link " onclick="shop()" aria-current="page" href="#">Shops</a>      
+                  </li>
+                  <li class="nav-item">
+                    <a id="blog" class="nav-link active"  onclick="blog()" aria-current="page" href="#">Blog</a>      
+                  </li>
+                  <li class="nav-item">
+                    <a id="about" class="nav-link active" onclick=" about()" aria-current="page" href="#">About</a>      
+                  </li>
+                  <li class="nav-item">
+                    <a id="contact" class="nav-link active" onclick="contact()" aria-current="page" href="#">Contact</a>      
+                  </li>
+                  <i onclick="addItem()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="sect">
+    <div class="container">
+        <div class="mainPage">
+            <div class="text">
+                <h2>Trends...</h2>
+                <h1 class="heads">Super Value Deals</h1>
+                <h1>On All Products</h1>
+                <p>These just in! Shop our latest new arrivals for Men and Women made with comfort, longevity <br> and
+                    effortless style in mind.</p>
+                <button>Explore</button>
+            </div>
+            <img src="font image.png" alt="">
+        </div>
+    </div>
+
+
+        <div class="cardMen">
+            <div class="head">
+                <h1>Trends <span>Men's Wear</span></h1>
+            </div>
+            <div class="cardf" id="item1">
+                <div class="crd">
+                    <img src="mn6.avif" alt="" onclick="showcardf(this)">
+                    <div class="txt">
+                        <h3>Men Graphic Print Crew-Neck</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button onclick="add(item1)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="mn7.avif" alt="" onclick="showcardf(this)">
+                    <div class="txt">
+                        <h3>Loose Fit Graphic Print Round</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="mn8.avif" alt="" onclick="showcardf(this)">
+                    <div class="txt">
+                        <h3>Slim Fit Polo T-Shirt with Logo</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cardfgirl">
+            <div class="head">
+                <h1>Trends <span>Women's Wear</span></h1>
+            </div>
+
+            <div class="cardf">
+                <div class="crd">
+                    <img src="wn4.webp" alt="" onclick="showcardf(this) ">
+                    <div class="txt">
+                        <h3>Floral Print Fit and Flare Dress</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="mn02.avif" alt="" onclick="showcardf(this) ">
+                    <div class="txt">
+                        <h3 class="md">Floral Print A-line Kurta</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button class="mt">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="wn01.avif" alt="" onclick="showcardf(this)">
+                    <div class="txt">
+                        <h3>Embroidery Straight Kurta Suit </h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardfgirl">
+            <div class="head">
+                <h1>Trends <span>Children's Wear</span></h1>
+            </div>
+
+            <div class="cardf">
+                <div class="crd">
+                    <img src="boy-kids-fashion.png" alt="" onclick="showcardf(this) ">
+                    <div class="txt">
+                        <h3>Best Street Style</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="3d3c034a4779c169c4691d33e3a9b365.jpg" alt="" onclick="showcardf(this) ">
+                    <div class="txt">
+                        <h3 class="md">Toolder Look</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button class="mt">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="7b08cfbb1c1ac2ea1ae6b5c1cf131392.jpg" alt="" onclick="showcardf(this)">
+                    <div class="txt">
+                        <h3> Kids Outfits</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <div class="fullPage">
+            <img id="cartImg" src=" " alt="">
+            <div class="cartText">
+                <h1>Men Graphic Print Crew-Neck Oversized T-Shirt <br> T-Shirt</h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                <p>Cotton</p>
+                <p>Relaxed Fit</p>
+                <p>Package contains: 1 t-shirt</p>
+                <p>Machine wash</p>
+                <p>Product Code: 466217940006.</p>
+
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addToCart()">Add To Cart</button>
+
+                </div>
+                <div class="btns">
+                    <button class="relode" onclick="location.reload()">Back </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="fullPage">
+            <img id="cartImg" src=" " alt="">
+            <div class="cartText">
+                <h1>Men Graphic Print Crew-Neck Oversized T-Shirt <br> T-Shirt</h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                <p>Cotton</p>
+                <p>Relaxed Fit</p>
+                <p>Package contains: 1 t-shirt</p>
+                <p>Machine wash</p>
+                <p>Product Code: 466217940006.</p>
+
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addToCart()">Add To Cart</button>
+
+                </div>
+                <div class="btns">
+                    <button class="relode" onclick="location.reload()">Back </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- add to cart -->
+        <div class="addCart">
+
+        </div>
+
+        <div class="blogContent">
+            <div class="head">
+                <h1>Trends Top <span>Blog's</span></h1>
+            </div>
+
+            <div class="trd">
+                <div class="trending">
+                    <div class="txt">
+                        <h2 class="hh">Trending Girl Cloths</h2><br>
+                        <p>A Nashville-based blog that focuses on minimalist sophistication, style and beauty tips, home
+                            decor, and travel</p><br>
+                        <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read More</a>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="txt">
+                        <h2 class="hh">Trending Boy Cloths</h2> <br>
+                        <p>A modern men's fashion & lifestyle blog dedicated to timeless yet contemporary style,
+                            intelligent living </p><br>
+                        <a href="https://www.apetogentleman.com/">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="aboutText">
+                <h1>#Know Us...</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iure eos!</p>
+            </div>
+
+            <div class="aboutus">
+                <img src="lap.png" alt="">
+                <div class="dumiText">
+                    <h1>Who we are ?</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam
+                        aperiam vel magni sequi eos sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt
+                        ipsam aperiam vel magni sequi eos atque nam maxime dolorem fuga, rem eum iure quidem! Illo
+                        corporis, asperiores ipsum excepturi voluptates necessitatibus consectetur odit omnis hic
+                        praesentium autem, officiis dignissimos assumenda saepe.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="contact">
+            <div class="contactBanner">
+                <h1>#Let's Connect</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iure eos!</p>
+
+            </div>
+            <div class="connect">
+                <div class="connectText">
+                    <h1>Visit Our Office or Contact <br> Us Today</h1>
+                    <p>Address : Dablin Park, England, New york</p>
+                    <p>Contact : dumiemail@gmail.com</p>
+                    <p>Number : 999999000011</p>
+                </div>
+                <img src="map.PNG" alt="">
+            </div>
+
+            <div class="form">
+                <h1>Connect with Us. Fill Form</h1>
+                <input type="text" placeholder="Enter Your FirstName"> <br>
+                <input type="text" placeholder="Enter Your LsstName"> <br>
+                <input type="text" placeholder="Enter Your Email"><br>
+                <input type="text" placeholder="Enter Your Number"><br>
+                <input type="text" placeholder="Enter Your Address"><br>
+                <button>Submit</button>
+
+            </div>
+        </div>
+
+        <div class="letter">
+            <div class="sign">
+                <h2>Sign Up for NewsLetter</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur Special Offer</p>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Email Address">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="Ftext">
+                <h1>Categories</h1>
+                <p>New Arrival</p>
+                <p>T-Shirt</p>
+                <p>Hoodies & Jackets</p>
+
+            </div>
+            <div class="Ftext">
+                <h1>About Us</h1>
+                <p>About</p>
+                <p>Privacy</p>
+                <p>Policy</p>
+
+
+            </div>
+            <div class="Ftext">
+                <h1>Contact</h1>
+                <p>(+92) 343 6303558</p>
+                <p>arainsaab650@gmail.com</p>
+                <p>Customer</p>
+
+
+            </div>
+            <div class="Ftext">
+                <h3>Trending</h3>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>SHops</p>
+                <p></p>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
